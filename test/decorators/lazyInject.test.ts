@@ -16,7 +16,7 @@ describe('decorators > lazyInject', () => {
   })
 
   it('should not throws error', async () => {
-    const resolveCallback = jest.fn(() => {})
+    const resolveCallback = jest.fn()
 
     @injectable()
     class B {}
