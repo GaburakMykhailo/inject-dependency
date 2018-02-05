@@ -11,7 +11,6 @@ export default class Context {
   private static _fabrics: Map<any, Function> = new Map()
   private static _meta: Map<any, InjectMeta> = new Map()
   private static _aliases: Map<any, any> = new Map()
-
   private static _injects: Map<any, LazyInject> = new Map()
 
   /**

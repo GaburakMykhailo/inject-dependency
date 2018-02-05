@@ -1,6 +1,4 @@
 /**
  * @private
  */
-export default function noop() {
-  console.info('noop called')
-}
+export default function noop() {} // tslint:disable-line
