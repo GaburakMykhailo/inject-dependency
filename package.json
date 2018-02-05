@@ -7,7 +7,7 @@
   "module": "dist/inject-dependency.es5.js",
   "typings": "dist/types/inject-dependency.d.ts",
   "files": ["dist"],
-  "author": " <>",
+  "author": "karubag",
   "repository": {
     "type": "git",
     "url": ""
