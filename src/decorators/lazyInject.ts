@@ -5,7 +5,6 @@ import Context from '../classes/context'
 
 /**
  * property decorator
- * Make sure when you using @lazyInject to hacve circular dependencies class is singleton
  * @param clsOrAlias
  * @param callback
  */
