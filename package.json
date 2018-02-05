@@ -10,7 +10,7 @@
   "author": "karubag",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/GaburakMykhailo/inject-dependency"
   },
   "license": "MIT",
   "engines": {
