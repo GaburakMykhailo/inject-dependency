@@ -78,9 +78,8 @@ export default class Context {
     callback: Function
   ) {
     Context._initMetaIfNotExists(clsOrAlias)
-    const meta = Context._getInjectMeta(clsOrAlias)
 
-    meta.lazyDependencies.set(key, {
+    Context._getInjectMeta(clsOrAlias).lazyDependencies.set(key, {
       clsOrAlias: dependency,
       callback
     })
@@ -97,8 +96,7 @@ export default class Context {
 
     Context._fabrics.set(targetClsOrAlias, fabrica)
 
-    const lazyMeta = Context._resolveLazy(targetClsOrAlias)
-    lazyMeta.resolve()
+    Context._resolveLazy(targetClsOrAlias).resolve()
 
     return Context
   }
