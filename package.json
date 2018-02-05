@@ -28,9 +28,10 @@
     "deploy-docs": "ts-node tools/gh-pages-publish",
     "report-coverage": "cat ./coverage/lcov.info | coveralls",
     "commit": "git-cz",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "semantic-release": "semantic-release",
     "semantic-release-prepare": "ts-node tools/semantic-release-prepare",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "travis-deploy-once": "travis-deploy-once"
   },
   "lint-staged": {
     "{src,test}/**/*.ts": ["prettier --write --no-semi --single-quote", "git add"]
@@ -84,7 +85,7 @@
     "rollup-plugin-node-resolve": "^3.0.0",
     "rollup-plugin-sourcemaps": "^0.4.2",
     "rollup-plugin-typescript2": "^0.9.0",
-    "semantic-release": "^11.0.2",
+    "semantic-release": "^12.4.1",
     "ts-jest": "^22.0.0",
     "ts-node": "^4.1.0",
     "tslint": "^5.8.0",
@@ -92,7 +93,8 @@
     "tslint-config-standard": "^7.0.0",
     "typedoc": "^0.9.0",
     "typescript": "^2.6.2",
-    "validate-commit-msg": "^2.12.2"
+    "validate-commit-msg": "^2.12.2",
+    "travis-deploy-once": "^4.3.4"
   },
   "dependencies": {
     "@types/core-js": "^0.9.46",
