@@ -1,6 +1,6 @@
 {
   "name": "inject-dependency",
-  "version": "0.1.0",
+  "version": "0.0.0-development",
   "description": "",
   "keywords": ["DI", "IoC", "dependency-injection", "injector"],
   "main": "dist/inject-dependency.umd.js",
