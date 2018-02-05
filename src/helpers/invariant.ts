@@ -1,5 +1,4 @@
 /**
- *
  * @private
  */
 export default function invariant(state: boolean, errorMessage: string) {
