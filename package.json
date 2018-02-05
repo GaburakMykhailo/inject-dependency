@@ -2,7 +2,7 @@
   "name": "inject-dependency",
   "version": "0.0.1",
   "description": "",
-  "keywords": [],
+  "keywords": ["DI", "IoC", "dependency-injection", "injector"],
   "main": "dist/inject-dependency.umd.js",
   "module": "dist/inject-dependency.es5.js",
   "typings": "dist/types/inject-dependency.d.ts",
