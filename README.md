@@ -115,7 +115,7 @@ This library was inpired by AngularJS
     */
 ```
 
-### Improve
+### TODO:
 
  - [ ] Add more unit tests
  - [ ] Improve code documentation
