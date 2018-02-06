@@ -6,10 +6,15 @@
 # Library for DI with global container underhood 
 This library was inpired by AngularJS
 
+```sh
+  npm i inject-dependency
+```
 
 ---
 ## Typescript Example:
 ```typescript
+    import {Context, singleton, injectable, dependencies, lazyInject, fabrica} from 'inject-dependency'
+
     @singleton
     @injectable()
     class A {
@@ -58,6 +63,8 @@ This library was inpired by AngularJS
 
 ## ES7 Example:
 ```js
+    import {Context, singleton, injectable, dependencies, lazyInject, fabrica} from 'inject-dependency'
+
     @singleton
     @injectable()
     class A {
@@ -107,3 +114,8 @@ This library was inpired by AngularJS
       C
     */
 ```
+
+### Improve
+
+ - [ ] Add more unit tests
+ - [ ] Improve code documentation
