@@ -86,6 +86,16 @@ export default class Context {
   }
 
   static bind(targetClsOrAlias: any, cls: Function) {
+    const fabrica = Context._fabrics.get(cls)
+
+    if (fabrica != null) {
+      Context._meta.set(targetClsOrAlias, Context._meta.get(cls) as any)
+      Context._injects.set(targetClsOrAlias, Context._injects.get(cls) as any)
+      Context.bindFabrica(targetClsOrAlias, Context._fabrics.get(cls) as any)
+
+      return Context
+    }
+
     Context.bindFabrica(targetClsOrAlias, classToFunction(cls))
 
     return Context

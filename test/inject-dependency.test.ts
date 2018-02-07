@@ -39,4 +39,26 @@ describe('Integration tests', () => {
       expect(a).toBe(a.b.a)
     })
   })
+
+  it('should correctly bind dependency', () => {
+    @singleton
+    @injectable()
+    class A {
+      hello() {
+        console.log('Hello from A')
+      }
+    }
+
+    @dependencies(A)
+    @injectable()
+    class Suu {
+      constructor(public a: A) {}
+    }
+
+    Context.bind('s', Suu)
+
+    expect(
+      Context.resolve<Suu>('s').a === Context.resolve<Suu>('s').a
+    ).toBeTruthy()
+  })
 })
