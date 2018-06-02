@@ -96,7 +96,7 @@
     "travis-deploy-once": "^4.3.4"
   },
   "dependencies": {
-    "@types/core-js": "^0.9.46",
+    "@types/core-js": "^2.5.0",
     "core-js": "^2.5.3"
   }
 }
