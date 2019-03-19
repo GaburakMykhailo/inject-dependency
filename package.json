@@ -97,6 +97,6 @@
   },
   "dependencies": {
     "@types/core-js": "^0.9.46",
-    "core-js": "^2.5.3"
+    "core-js": "^3.0.0"
   }
 }
